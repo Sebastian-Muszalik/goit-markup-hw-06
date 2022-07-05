@@ -665,6 +665,7 @@ li {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.03em;
+  display: block;
   color: #ffffff;
 }
 .footer-flex {
@@ -673,6 +674,7 @@ li {
 .container-footer-form {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 78px;
 }
 .container-footer-social {
   max-width: 300px;
@@ -702,18 +704,6 @@ li {
   align-items: center;
 }
 
-.footer h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
-  display: block;
-  padding-top: 72px;
-  margin-bottom: 20px;
-  margin-left: 60px;
-}
 .footer-form button {
   width: 200px;
   height: 50px;
