@@ -134,6 +134,7 @@ body {
   font-style: normal;
   font-weight: 500;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* klasa dla linków  */
@@ -174,6 +175,9 @@ a {
 .frame-button2 {
   background: #f5f4fa;
   margin-left: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-front2 {
   font-style: normal;
@@ -184,6 +188,9 @@ a {
   border-radius: 4px;
   line-height: 1.625em;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-front2:hover {
   color: #ffffff;
@@ -212,7 +219,11 @@ a {
   height: 50px;
   left: 700px;
   top: 430px;
+  transition-property: transform, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0.2, 1);
 }
+
 .button-front:hover {
   color: #212121;
   transition: 250ms;
@@ -351,12 +362,16 @@ li {
   background-color: #ffffff;
   color: #afb1b8;
   margin: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-icon-item {
   width: 20px;
   height: 20px;
   fill: currentcolor;
+  transition: transform, fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-icon-item:focus,
 .main-icon-item:hover {
@@ -408,6 +423,8 @@ li {
   margin-bottom: 30px;
   cursor: pointer;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-item:hover {
   fill: #2196f3;
@@ -508,7 +525,7 @@ li {
 }
 
 .footer {
-  padding: 60px 0;
+  padding: 50px 0;
   width: 1600px;
 }
 .footer-nav:last-child {
@@ -557,6 +574,7 @@ li {
   width: 370px;
   margin: 0 15px 30px 15px;
   cursor: pointer;
+  transition: transform, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-imag:hover {
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 3px 2px rgba(0, 0, 0, 0.08),
@@ -630,7 +648,7 @@ li {
   margin-left: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-item-icon {
   width: 20px;
@@ -670,12 +688,12 @@ li {
 }
 .footer-flex {
   display: flex;
-  height: 252px;
+  height: 253px;
 }
 .container-footer-form {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 78px;
+  margin-left: 151px;
 }
 .container-footer-social {
   max-width: 300px;
@@ -837,9 +855,8 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%);
-  transition: backgrund-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 .is-hidden {
   opacity: 0;
@@ -853,6 +870,8 @@ li {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: visibility, opacity;
 }
 
 .close-btn {
@@ -861,7 +880,7 @@ li {
   cursor: pointer;
   top: 8px;
   right: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(197, 58, 58, 0.1);
   border-radius: 50%;
 }
 .overlay {
@@ -985,17 +1004,17 @@ li {
   margin-left: 0;
   margin-right: 7px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .web-checkbox {
   position: absolute;
   opacity: 0;
+  cursor: pointer;
 }
 
 .web-checkbox:checked + .checkbox-label::before {
   background-color: var(--color4);
-  border: none;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMyAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuOTU3MDMgNC43NTE2NkwxLjg4ODI1IDQuNjg2MDRMMS44MTkyMyA0Ljc1MTQxTDAuOTMxMjMgNS41OTI1OEwwLjg1NDg1OCA1LjY2NDkyTDAuOTMwOTc0IDUuNzM3NTNMNC40MjY3MSA5LjA3MjM2TDQuNDk1NzQgOS4xMzgyTDQuNTY0NzYgOS4wNzIzNkwxMi4wNjkgMS45MTM1MkwxMi4xNDQ5IDEuODQxMTZMMTIuMDY5IDEuNzY4ODFMMTEuMTg3MyAwLjkyNzY0NEwxMS4xMTgzIDAuODYxODI2TDExLjA0OTMgMC45Mjc2MTFMNC40OTU3NyA3LjE3MzUzTDEuOTU3MDMgNC43NTE2NloiIGZpbGw9IndoaXRlIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjAuMiIvPgo8L3N2Zz4K);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1006,7 +1025,9 @@ li {
   padding: 0;
   align-self: center;
 }
-
+.checkbox-lab {
+  text-decoration: underline;
+}
 .modal-form textarea {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1060,12 +1081,11 @@ input:focus-visible {
 }
 .modal-item {
   color: #fff;
-  margin-top: 50px;
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: -9px;
 }
 /* end-modal */
