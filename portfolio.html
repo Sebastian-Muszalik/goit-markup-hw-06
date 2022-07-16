@@ -306,7 +306,7 @@
           <span class="Web-foot">Studio</span></a>
           <address>
           <ul>
-            <li class="m-Warszaw">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li class="m-Warszaw">m. Warszawa, Aleje Jerozolimskie 21 </li>
             <li class="footer-nav">
               <a class="adres" href="malito:info@example.com"
                 >info@example.com</a
@@ -344,6 +344,29 @@
             </li>
           </ul>
         </section>
+        
+      <div class="container-footer-form">
+        <p class="modal-item ">Zapisz się do newslettera</p>
+        <div class="footer-form">
+          <form
+            name="newsletter"
+            action="http://localhost:3000/posts"
+            method="POST"
+          >
+            <label>
+              <input type="email" name="email" placeholder="E-mail" />
+            </label>
+
+            <button type="submit">
+              <span class="signup">Zapisz się</span>
+              <svg>
+                <use href="images/icon.svg#icon-icon-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </footer>
   </body>
 </html>
