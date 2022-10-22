@@ -209,7 +209,9 @@ a {
 }
 .frame-button {
   background: #2196f3;
+  border: 0px;
 }
+
 .button-front {
   font-size: 16px;
   font-style: normal;
@@ -894,26 +896,30 @@ li {
   width: 12px;
   height: 12px;
   fill: #000;
-  position: absolute;
-  left: 52px;
 }
 
 .icon-form-avatar {
   width: 12px;
   height: 12px;
-  top: 132px;
+  top: 130px;
+  position: absolute;
+  left: 60px;
 }
 
 .icon-form-phone {
   height: 13px;
   width: 13px;
   top: 200px;
+  position: absolute;
+  left: 60px;
 }
 
 .icon-form-envelope {
   width: 15px;
   height: 12px;
   top: 268px;
+  position: absolute;
+  left: 60px;
 }
 .text-nav:hover {
   color: #2196f3;
@@ -957,6 +963,7 @@ li {
 }
 
 .modal-form input {
+  opacity: 1;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
