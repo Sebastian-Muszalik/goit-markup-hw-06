@@ -990,13 +990,6 @@ li {
   display: block;
 }
 
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-  padding-right: 40px;
-  margin-top: 0;
-}
-
 .checkbox-container a {
   color: var(--color4);
 }
@@ -1018,10 +1011,7 @@ li {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.kupa {
-  width: 24;
-  height: 30;
-}
+
 .checkbox-label {
   margin: 0;
   padding: 0;
