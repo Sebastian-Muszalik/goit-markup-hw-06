@@ -966,7 +966,6 @@ li {
 }
 
 .modal-form input {
-  opacity: 1;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
