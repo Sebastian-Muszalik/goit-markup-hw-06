@@ -1011,11 +1011,11 @@ li {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.checkbox-label {
-  margin: 0;
+.web-checkbox {
   padding: 0;
   align-self: center;
+  opacity: 0;
+  position: absolute;
 }
 .checkbox-lab {
   text-decoration: underline;
