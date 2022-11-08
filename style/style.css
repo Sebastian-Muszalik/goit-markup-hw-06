@@ -712,7 +712,7 @@ li {
   width: 358px;
   height: 50px;
   background-color: transparent;
-  color: var(--color2);
+  color: white;
   padding: 16px;
 }
 
@@ -985,10 +985,8 @@ li {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  display: block;
+  font-size: 15px;
 }
-
 .checkbox-container a {
   color: var(--color4);
 }
@@ -998,8 +996,8 @@ li {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-left: 0;
-  margin-right: 7px;
+  margin-left: 20px;
+  margin-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 3px;
 }
@@ -1011,7 +1009,6 @@ li {
   background-position: center center;
 }
 .web-checkbox {
-  padding: 0;
   align-self: center;
   opacity: 0;
   position: absolute;
@@ -1028,7 +1025,6 @@ li {
 .modal-form input:hover,
 .modal-form textarea:hover {
   border: 1px solid var(--color4);
-  border-radius: 4px;
 }
 
 textarea:focus-visible,
