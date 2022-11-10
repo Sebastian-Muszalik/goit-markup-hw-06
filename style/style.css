@@ -163,7 +163,6 @@ a {
   cursor: pointer;
   border: 0px;
   padding: 10px 42px;
-  border-radius: 4px;
 }
 .buton-cont {
   text-align: center;
@@ -210,6 +209,7 @@ a {
 .frame-button {
   background: #2196f3;
   border: 0px;
+  border-radius: 4px;
 }
 
 .button-front {
